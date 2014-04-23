@@ -95,6 +95,25 @@ You can now access both the current page `meta.tags_array` and each `page.meta.t
 </html>
 ```
 
+And you should modify your main page's template (i.e. `themes/default/index.html`)
+in page loop section, like:
+
+```html
+{% for page in pages %}
+
+	<h3>{{ page.title }}</h3>
+	{{ page.content|slice(1,300)|striptags }}
+
+	{% if page.meta.tags_array %}
+		<br><b>Tags:</b>
+		{% for tag in page.meta.tags_array %}
+			<a href="{{ base_url }}/tag/{{ tag }}">#{{ tag }}</a>
+		{% endfor %}
+	{% endif %}
+
+{% endfor %}
+```
+
 ## License
 
 MIT
