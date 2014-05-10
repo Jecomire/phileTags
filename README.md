@@ -45,15 +45,17 @@ Tags: js, javascript, php
 */
 ```
 
+
 ## Configuration
 
-In `config.php` you can customize:
+In `philecms/plugins/phileTags/config.php` you can customize:
 
-* `$config['tag_template']` - which template should be used when on a `tag/` page. 
-This setting defaults to `'tag'`.
+* `$config['tag_template']` -- which template should be used for `site.com/tag/sometag` pages. 
+This setting defaults to `'tag'` (mean `tag.html`).
 
-* `$config['tag_separator']` - the separator used for splitting the tag meta(regexps, like `'\s*'` are allowed). 
+* `$config['tag_separator']` -- the separator used for splitting the tag meta (regexps, like `'\s*'` are allowed). 
 Its default value is `','`.
+
 
 ## Templates
 
