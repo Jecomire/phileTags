@@ -2,7 +2,7 @@ PhileTags
 ========
 
 Plugin adds page tagging functionality to [Phile](http://philecms.github.io/Phile).
-Based on [Pico Tags by Szymon Kaliski](https://github.com/szymonkaliski/Phile-Tags-Plugin), but only uses the provided hooks
+Based on [Pico Tags by Szymon Kaliski](https://github.com/szymonkaliski/Pico-Tags-Plugin), but only uses the provided hooks
 and leaves the Phile core alone.
 
 It gives you access to:
