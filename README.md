@@ -23,13 +23,10 @@ git clone https://github.com/pschmitt/phileTags /srv/http/plugins/phileTags
 
 * * *
 
-* Activate it in `config.php`:
+* Activate it in `philecms/config.php` file, by adding a line:
 
 ```php
-$config['plugins'] = array(
-    // [...]
-    'phileTags' => array('active' => true),
-); 
+$config['plugins']['phileTags'] = array('active' => true);
 ```
 
 
